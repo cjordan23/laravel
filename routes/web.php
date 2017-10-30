@@ -14,3 +14,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hello', function () {
+    return 'Hello World!';
+});
+
+Route::get('/about',function(){
+    return view('pages.about');
+});
+
+Route::get('/users/{id}/{name}', function($id,$name){
+    return 'This is user '.$id.' This user name is '.$name;
+});                                                       
+
+Route::get('/index', 'PagesController@index');
+
+Route::get('/about',function(){
+    return view('pages.about');
+});
