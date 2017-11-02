@@ -8,10 +8,16 @@ class PagesController extends Controller
 {
     //
     public function index(){
-        $title = 'Welcome to Laravell';
+        $title = 'My App';
         // return view('pages.index',compact('title'));
         return view('pages.index')->with('title',$title);
     }
+
+    public function posting(){
+        $title = 'Post Page';
+        return view('pages.posting')->with('title',$title);
+    }
+
 
     public function about(){
         // return view('pages.about');
