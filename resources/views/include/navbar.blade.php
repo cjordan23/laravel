@@ -13,6 +13,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/index">Home</a></li>
+                <li><a href="/posting">Post</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/services">Services</a></li>
             </ul>
