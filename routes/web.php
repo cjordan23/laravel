@@ -19,22 +19,19 @@ Route::get('/hello', function () {
     return 'Hello World!';
 });
 
-
-
 Route::get('/users/{id}/{name}', function($id,$name){
     return 'This is user '.$id.' This user name is '.$name;
 });                                                       
 
-Route::get('/index', 'PagesController@index');
-Route::get('/posting','PagesController@posting');
-Route::get('/about','PagesController@about');
-Route::get('/services','PagesController@services');
 
-// Route::get('/index',function(){
-//     return view('pages.index');
-// });
-// Route::get('/about',function(){
-//     return view('pages.about');
-// });
-// Route::get('/services',function(){
-//     return view('pages.services');
+
+
+Route::get('/index', 'PagesController@index');
+Route::get('/about', 'PagesController@about');
+Route::get('/services', 'PagesController@services');
+
+Route::resource('posts', 'PostsController');
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');

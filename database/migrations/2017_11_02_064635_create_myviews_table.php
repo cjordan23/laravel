@@ -16,6 +16,7 @@ class CreateMyviewsTable extends Migration
         Schema::create('myviews', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            $table->mediumText('body');
             $table->timestamps();
             $table->rememberToken();
 

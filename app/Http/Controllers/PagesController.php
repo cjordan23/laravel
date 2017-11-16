@@ -13,12 +13,6 @@ class PagesController extends Controller
         return view('pages.index')->with('title',$title);
     }
 
-    public function posting(){
-        $title = 'Post Page';
-        return view('pages.posting')->with('title',$title);
-    }
-
-
     public function about(){
         // return view('pages.about');
         $title = 'About Page';
@@ -34,6 +28,10 @@ class PagesController extends Controller
     }
 
 
+   // public function posting(){
+    //     $title = 'Post Page';
+    //     return view('post.index')->with('title',$title);
+    // }
 
 
 
