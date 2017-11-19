@@ -13,6 +13,8 @@ class Post extends Model
     public $primaryKey = 'id';
     //Title
     public $postTitle = 'title';
+    //
+    public $postbody = 'body';
     //Timestamp
     public $timestamps = true;
 

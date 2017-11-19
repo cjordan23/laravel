@@ -7,9 +7,11 @@
 </div>
 
 
+
+<!-- Parallax Scroll Index -->
 <div class="bgimg-1">
   <div class="caption">
-    <span class="border">SCROLL DOWN</span>
+    <span class="border">Hello :)</span>
   </div>
 </div>
 
@@ -26,7 +28,7 @@
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    <p class="text-center">Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
   </div>
 </div>
 
@@ -38,7 +40,7 @@
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    <p class="text-center">Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
   </div>
 </div>
 
@@ -47,9 +49,6 @@
     <span class="border">COOL!</span>
   </div>
 </div>
-
-
-
 
 
 

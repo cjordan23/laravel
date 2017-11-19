@@ -5,11 +5,12 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading text-center">
                     <h4>Welcome to your Dashboard</h4>
                 </div>
 
                 <div class="panel-body">
+                <button type="button" class="btn btn-secondary btn-lg btn-block"><a href="/posts/create">Create your post here</a></button>
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
@@ -25,7 +26,7 @@
                             <th></th>
                             <th></th>
                         </tr> 
-                        @foreach($post as $posts)
+                        @foreach($posts as $post)
                             <tr>
                                 <td>{{$post->title}}</td>
                                 <td><a href="/posts/{{$post->id}}/edit" class="btn btn-secondary">Edit</a></td>
@@ -42,7 +43,7 @@
                     @else
                         <h4>You have no posts</h4> 
                     @endif
-                    <button type="button" class="btn btn-secondary btn-lg btn-block"><a href="/posts/create">Create your post here</a></button>
+                    
                 </div>
             </div>
         </div>

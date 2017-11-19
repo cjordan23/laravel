@@ -8,6 +8,16 @@ use DB;
 
 class PostsController extends Controller
 {
+     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'show'] ]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -75,7 +85,12 @@ class PostsController extends Controller
     {
         //
         $post = Post::find($id);
-        return view('post.show')->with('post',$post);
+        //Check correct user
+        if(auth()->user()->id !==$post->userID){
+            return redirect ('/posts')->with('error','You cannot access this page');
+        }
+        
+        return view('post.edit')->with('post',$post);
     }
 
     /**
