@@ -1,3 +1,15 @@
+//  Universal
+body{
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+h3{
+    color: white;
+}
+
+//  Jumbotron
 .jumbotron {
     background-color: #ececec;
 }
@@ -15,7 +27,22 @@
     height: 100px;
     background-color:#6e6e6e;
 }
+//  Footer.blade.php
+#thisFooter{
+    height: auto;
+    width: auto;
+    background-color: #ffffff;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
 
-.footerContainer{
-    height: 100px;
+//  dashboard.blade.php
+#dashboardContainer {
+    height: 90vh;
+}
+
+#dashboardPanelBox {
+    margin-top: 50px;
 }

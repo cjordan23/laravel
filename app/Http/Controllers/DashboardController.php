@@ -26,7 +26,7 @@ class DashboardController extends Controller
     {
         
         $userID = auth()->user()->id;
-        // Tadi tambahin s pada $user
+        // gonta-ganti tambahin s pada $user di line bawah
         $users = User::find($userID);
         return view('dashboard')->with('posts', $users->post);
     }

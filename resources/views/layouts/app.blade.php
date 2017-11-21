@@ -22,6 +22,8 @@
     <link href="{{ URL::asset('/css/aboutcarousel.css' )}}" rel="stylesheet">
     <link href="{{ URL::asset('/css/services.css' )}}" rel="stylesheet">
 
+    <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+
     
     <!-- Scripts -->
     <script type="text/javascript" src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
@@ -41,7 +43,7 @@
            </div>
         </div>
 
-       @include('include.footer')
+       {{--  @include('include.footer')  --}}
 
 
     </div>
@@ -50,8 +52,8 @@
     <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Ckeditor -->
-    <script>
-        CKEDITOR.replace( 'article-ckeditor' );
+    <script src="{{ asset('/js/ckeditor.js') }}">
+        CKEDITOR.replace( jQuery('.ckeditor') );
     </script>
 
     <!-- Bootstrap core JavaScript
@@ -72,4 +74,5 @@
     <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
 </body>
+
 </html>

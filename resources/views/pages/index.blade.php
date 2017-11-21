@@ -2,8 +2,13 @@
 
 @section('content')
 <div class="jumbotron text-center">
-    <h1>{{$title}}</h1>
-    <p>This is my laravel tutorial</p><button type="button" class="btn btn-default">Default</button>
+    <h1>Hello!</h1>
+      @if (Auth::check() )
+        <h2>Welcome {{Auth::user()->name}}</h2>
+      @else
+        <h2>Welcome</h2>
+      @endif
+    <p>This is my laravel tutorial, creating a simple blog website</p><button type="button" class="btn btn-default">Default</button>
 </div>
 
 

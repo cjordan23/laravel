@@ -20,7 +20,7 @@
                     <div class="col-sm-10">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <strong>myusername</strong> <span class="text-muted"><</span>
+                                <strong>{{Auth::user()->name}}</strong> <span class="text-muted"><</span>
                             </div>
                             <div class="panel-body">
                                 
@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="form-group">
                                         {{Form::label('body','Body')}}
-                                        {{Form::textarea('body','', ['id'=>'article-ckeditor','class'=>'form-control', 'placeholder'=>'Place your text here' ]) }}
+                                        {{Form::textarea('body','', ['class'=>'article-ckeditor','class'=>'form-control', 'placeholder'=>'Place your text here' ]) }}
                                 </div>
                                 {{Form::submit('Submit', ['class' => 'btn btn-secondary']) }}
                             

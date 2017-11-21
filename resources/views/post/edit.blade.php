@@ -22,7 +22,7 @@
                     <div class="col-sm-10">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <strong>myusername</strong> <span class="text-muted"><</span>
+                                <strong>{{Auth::user()->name}}</strong> <span class="text-muted"><</span>
                             </div>
                             <div class="panel-body">
                                 
